@@ -1,0 +1,38 @@
+﻿<Window x:Class="DentalProApp.EditareUtilizatorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Editare Utilizator"
+        Height="300" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#f9f9f9">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0 0 0 10">
+            <TextBlock Text="Username:"/>
+            <TextBox Name="txtUsername" Width="250" Height="30"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="0 0 0 10">
+            <TextBlock Text="Parolă nouă (opțional):"/>
+            <PasswordBox Name="txtParola" Width="250" Height="30"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="0 0 0 10">
+            <TextBlock Text="Rol:"/>
+            <ComboBox Name="cmbRol" Width="250" Height="30"/>
+        </StackPanel>
+
+        <Button Grid.Row="3" Content="Salvează" Width="120" Height="35"
+                Click="BtnSalveaza_Click"
+                HorizontalAlignment="Center"
+                Background="#2196F3" Foreground="White"/>
+    </Grid>
+</Window>

@@ -1,0 +1,91 @@
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\DentalProApp.exe.config
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\DentalProApp.exe
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\DentalProApp.pdb
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\Npgsql.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Buffers.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Memory.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Text.Json.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Threading.Channels.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.ValueTuple.dll
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\Npgsql.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Buffers.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Memory.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Text.Json.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Threading.Channels.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\tonyc\source\repos\DentalProApp\bin\Debug\System.ValueTuple.xml
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp.csproj.AssemblyReference.cache
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\MainWindow.g.cs
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\App.g.cs
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp_MarkupCompile.cache
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp_MarkupCompile.lref
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\MainWindow.baml
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp.g.resources
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp.Properties.Resources.resources
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp.csproj.GenerateResource.cache
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp.csproj.CoreCompileInputs.cache
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalPr.8BC30C2B.Up2Date
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp.exe
+C:\Users\tonyc\source\repos\DentalProApp\obj\Debug\DentalProApp.pdb
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp.csproj.AssemblyReference.cache
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\MainWindow.g.cs
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\App.g.cs
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp_MarkupCompile.cache
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp_MarkupCompile.lref
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp.exe
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp.pdb
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\DentalProApp.exe.config
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\DentalProApp.exe
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\DentalProApp.pdb
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\Npgsql.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Buffers.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Memory.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Numerics.Vectors.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Text.Json.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Threading.Channels.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.ValueTuple.dll
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\Npgsql.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Buffers.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Memory.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Numerics.Vectors.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Text.Json.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Threading.Channels.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\bin\Debug\System.ValueTuple.xml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\MainWindow.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp.g.resources
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp.Properties.Resources.resources
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp.csproj.GenerateResource.cache
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalProApp.csproj.CoreCompileInputs.cache
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\DentalPr.8BC30C2B.Up2Date
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\LoginWindow.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\LoginWindow.g.cs
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\AdminWindow.g.cs
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\MedicWindow.g.cs
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\ReceptieWindow.g.cs
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\AdminWindow.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\MedicWindow.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\ReceptieWindow.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\App.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\AdaugaUtilizatorWindow.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\AdaugaUtilizatorWindow.g.cs
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\EditareUtilizatorWindow.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\EditareUtilizatorWindow.g.cs
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\PacientiWindow.baml
+C:\PROgramare\ProgrammingVisual Studio\Lic\DentalProApp\obj\Debug\PacientiWindow.g.cs
