@@ -1,0 +1,35 @@
+﻿<Window x:Class="DentalProApp.EditareFacturaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Editare Factură" Height="400" Width="420"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#f9f9f9">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Modifică detaliile facturii" FontSize="20" FontWeight="Bold" Margin="0 0 0 10"/>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Tratament (Pacient - Serviciu):" FontWeight="Bold"/>
+            <ComboBox Name="cmbTratament" Height="30" Margin="0,0,0,10" IsEnabled="False"/>
+
+            <TextBlock Text="Metodă de plată:" FontWeight="Bold"/>
+            <ComboBox Name="cmbMetodaPlata" Height="30" Margin="0,0,0,10">
+                <ComboBoxItem Content="Numerar"/>
+                <ComboBoxItem Content="Card"/>
+                <ComboBoxItem Content="Transfer bancar"/>
+            </ComboBox>
+
+            <TextBlock Text="Total (lei):" FontWeight="Bold"/>
+            <TextBox Name="txtTotal" Height="30" Margin="0,0,0,10"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Salvează modificările" Height="35" Width="160" HorizontalAlignment="Center"
+                Margin="0 20 0 0" Click="BtnSalveaza_Click"
+                Background="#2196F3" Foreground="White" FontWeight="Bold"/>
+    </Grid>
+</Window>

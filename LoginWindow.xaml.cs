@@ -25,7 +25,7 @@ namespace DentalProApp
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("u", username);
-                    cmd.Parameters.AddWithValue("p", password); // doar pt test, ulterior criptăm
+                    cmd.Parameters.AddWithValue("p", password); // doar pt test ulterior criptăm
 
                     var result = cmd.ExecuteScalar();
 
@@ -34,7 +34,7 @@ namespace DentalProApp
                         string rol = result.ToString();
                         MessageBox.Show($"Bun venit, {username}! Rol: {rol}");
 
-                        // În funcție de rol, deschide o fereastră diferită
+                        // in functie de rol deschide o fereastra diferita
                         Window fereastra = null;
 
                         if (rol == "admin") fereastra = new AdminWindow();
