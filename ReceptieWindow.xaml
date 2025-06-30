@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DentalProApp"
         mc:Ignorable="d"
-        Title="ReceptieWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="ReceptieWindow" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen" Background="#f0f4f8">
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Titlu -->
+        <TextBlock Text="Panou de Recepție - DentalPro SRL"
+                   FontSize="24" FontWeight="Bold" Foreground="#333"
+                   HorizontalAlignment="Center" Margin="0 0 0 5" />
+
+        <!-- Bun venit + ora -->
+        <StackPanel Grid.Row="1" Margin="0 0 0 20" HorizontalAlignment="Center">
+            <TextBlock Name="txtBunVenitReceptie" FontSize="16" FontWeight="SemiBold" Foreground="#555" TextAlignment="Center"/>
+            <TextBlock Name="txtDataOraReceptie" FontSize="12" Foreground="#888" TextAlignment="Center"/>
+        </StackPanel>
+        <Button Content="✘ Deconectare" Width="94" Height="27" HorizontalAlignment="Left" VerticalAlignment="Center"
+        Margin="590,0,0,0" Click="BtnDeconectare_Click"
+        Background="#d32f2f" Foreground="White" FontWeight="Bold" Grid.Row="2"/>
+
+        <!-- Butoane -->
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" ItemWidth="220" ItemHeight="80" Margin="0,55,0,0" Height="184">
+            <Button Content="Gestionare Pacienți" Width="200" Height="50" Margin="10"
+                    Click="BtnPacienti_Click" Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Gestionare Programări" Width="200" Height="50" Margin="10"
+                    Click="BtnProgramari_Click" Background="#2196F3" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Gestionare Tratamente" Width="200" Height="50" Margin="10"
+                    Click="BtnTratamente_Click" Background="#FF7043" Foreground="White" FontWeight="Bold"/>
+            <Button Content="Gestionare Facturi" Width="200" Height="50" Margin="10"
+                    Click="BtnFacturi_Click" Background="#FFA726" Foreground="White" FontWeight="Bold"/>
+        </WrapPanel>
     </Grid>
 </Window>

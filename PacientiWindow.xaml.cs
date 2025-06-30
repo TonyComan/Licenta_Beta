@@ -26,6 +26,87 @@ namespace DentalProApp
             InitializeComponent();
             LoadPacienti(); // Incarca pacientii la deschidere
         }
+        private void BtnAdauga_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Funcție Adăugare pacient (în lucru)");
+            var fereastra = new AdaugaPacientWindow();
+            var rezultat = fereastra.ShowDialog();
+
+            if (rezultat == true)
+            {
+                LoadPacienti(); // Reîncarcă lista după adăugare
+            }
+        }
+
+        private void BtnEditeaza_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Funcție Editare pacient (în lucru)");
+
+            var pacientSelectat = dgPacienti.SelectedItem as Pacient;
+
+            if (pacientSelectat == null)
+            {
+                MessageBox.Show("Selectează un pacient pentru editare.", "Atenție", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var fereastra = new EditarePacientWindow(pacientSelectat);
+            var rezultat = fereastra.ShowDialog();
+
+            if (rezultat == true)
+            {
+                LoadPacienti();
+            }
+        }
+
+        private void BtnSterge_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Funcție Ștergere pacient (în lucru)");
+            var pacientSelectat = dgPacienti.SelectedItem as Pacient;
+
+            if (pacientSelectat == null)
+            {
+                MessageBox.Show("Selectează un pacient pentru ștergere.", "Atenție", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var confirmare = MessageBox.Show(
+                $"Ești sigur că vrei să ștergi pacientul \"{pacientSelectat.nume} {pacientSelectat.prenume}\"?",
+                "Confirmare ștergere",
+                MessageBoxButton.YesNo,
+                MessageBoxImage.Question);
+
+            if (confirmare != MessageBoxResult.Yes)
+                return;
+
+            var conn = DbConnectionHelper.GetConnection();
+            if (conn == null) return;
+
+            try
+            {
+                string query = "DELETE FROM pacient WHERE id = @id";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", pacientSelectat.id);
+                    cmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("✅ Pacient șters cu succes.");
+                LoadPacienti(); // Reîncarcă lista
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("❌ Eroare la ștergere: " + ex.Message, "Eroare", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+    
+
+        
 
         private void LoadPacienti()
         {
@@ -62,6 +143,45 @@ namespace DentalProApp
 
             dgPacienti.ItemsSource = pacienti;
         }
+
+
+
+        private void txtCautare_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (dgPacienti.ItemsSource == null) return;
+
+            var criteriu = (cmbCriteriu.SelectedItem as ComboBoxItem)?.Content.ToString();
+            var text = txtCautare.Text.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(criteriu) || string.IsNullOrEmpty(text))
+            {
+                dgPacienti.Items.Filter = null;
+                return;
+            }
+
+            dgPacienti.Items.Filter = item =>
+            {
+                var pacient = item as Pacient;
+                if (pacient == null) return false;
+
+                switch (criteriu)
+                {
+                    case "Nume":
+                        return pacient.nume != null && pacient.nume.ToLower().Contains(text);
+                    case "CNP":
+                        return pacient.cnp != null && pacient.cnp.ToLower().Contains(text);
+                    case "Telefon":
+                        return pacient.telefon != null && pacient.telefon.ToLower().Contains(text);
+                    case "Email":
+                        return pacient.email != null && pacient.email.ToLower().Contains(text);
+                    default:
+                        return true;
+                }
+            };
+        }
+
+
+
     }
 }
 

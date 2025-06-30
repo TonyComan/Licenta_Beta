@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DentalProApp"
         mc:Ignorable="d"
-        Title="MedicWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Panou Medic" Height="600" Width="800"
+        WindowStartupLocation="CenterScreen" Background="#f0f4f8">
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Titlu -->
+        <DockPanel Grid.Row="0" LastChildFill="False">
+            <Button Content="✘ Deconectare"
+                    Click="BtnDeconectare_Click"
+                    Background="#e53935" Foreground="White" FontWeight="Bold" DockPanel.Dock="Right" Width="96" Height="28"/>
+            <TextBlock Text="Panou Medic - DentalPro SRL"
+                       FontSize="28" FontWeight="Bold" Foreground="#333" DockPanel.Dock="Right" Height="47" Width="482"/>
+        </DockPanel>
+
+        <!-- Bun venit + ora -->
+        <StackPanel Grid.Row="1" Margin="0 0 0 20" HorizontalAlignment="Center">
+            <TextBlock Name="txtBunVenitMedic" FontSize="16" FontWeight="SemiBold" Foreground="#555" TextAlignment="Center"/>
+            <TextBlock Name="txtDataOraMedic" FontSize="12" Foreground="#888" TextAlignment="Center"/>
+        </StackPanel>
+
+        <!-- Butoane -->
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" ItemWidth="220" ItemHeight="80" Margin="0,30,0,0" Height="180">
+            <Button Content="Colaborare Tehnician" Width="200" Height="50" Margin="10"
+                    Background="#6A1B9A" Foreground="White" FontWeight="Bold"
+                    Click="BtnColaborare_Click"/>
+            <Button Content="Adaugă Tehnician" Width="200" Height="50" Margin="10"
+                    Background="#009688" Foreground="White" FontWeight="Bold"
+                    Click="BtnAdaugaTehnician_Click"/>
+            <Button Content="Adaugă tratament" Width="200" Height="50" Margin="10"
+                    Background="#4CAF50" Foreground="White" FontWeight="Bold"
+                    Click="BtnAdaugaTratament_Click"/>
+            <Button Content="Consimțământ Chirurgical" Width="200" Height="50" Margin="10"
+                    Background="DarkOrange" Foreground="White" FontWeight="Bold"
+                    Click="BtnConsimtamant_Click"/>
+            <Button Content="Istoric Pacient" Width="200" Height="50" Margin="10"
+                    Background="DarkBlue" Foreground="White" FontWeight="Bold"
+                    Click="BtnIstoricPacient_Click"/>
+        </WrapPanel>
     </Grid>
 </Window>

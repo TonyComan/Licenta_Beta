@@ -7,13 +7,27 @@
         Background="#f9f9f9">
 
     <Grid Margin="20">
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" Margin="0 0 0 10">
+            <TextBlock Text="📋 Listă pacienți" FontSize="24" FontWeight="Bold" Foreground="#333" 
+                       VerticalAlignment="Center" DockPanel.Dock="Left"/>
 
-        <TextBlock Text="Listă pacienți" FontSize="24" FontWeight="Bold" Foreground="#333" Margin="0 0 0 10"/>
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" HorizontalAlignment="Right">
+                <ComboBox Name="cmbCriteriu" Width="150" Margin="0,0,10,0" SelectedIndex="0" Height="25">
+                    <ComboBoxItem Content="Nume"/>
+                    <ComboBoxItem Content="CNP"/>
+                    <ComboBoxItem Content="Telefon"/>
+                    <ComboBoxItem Content="Email"/>
+                </ComboBox>
+                <TextBox x:Name="txtCautare" Width="191" TextChanged="txtCautare_TextChanged" Height="24"/>
+            </StackPanel>
+        </DockPanel>
+        
 
         <DataGrid Name="dgPacienti" Grid.Row="1"
                   AutoGenerateColumns="False"

@@ -16,46 +16,42 @@ using System.Windows.Threading;
 namespace DentalProApp
 {
     /// <summary>
-    /// Interaction logic for MedicWindow.xaml
+    /// Interaction logic for ReceptieWindow.xaml
     /// </summary>
-    public partial class MedicWindow : Window
+    public partial class ReceptieWindow : Window
     {
-        public MedicWindow()
+        public ReceptieWindow()
         {
             InitializeComponent();
-            txtBunVenitMedic.Text = $"Bun venit!";
+
+            txtBunVenitReceptie.Text = $"Bun venit!";
             StartClock();
         }
-
-        private void BtnColaborare_Click(object sender, RoutedEventArgs e)
+        
+        private void BtnPacienti_Click(object sender, RoutedEventArgs e)
         {
-            var fereastra = new ColaborareWindow();
+             
+            var fereastra = new PacientiWindow();
+            fereastra.ShowDialog();
+        
+
+    }
+
+        private void BtnProgramari_Click(object sender, RoutedEventArgs e)
+        {
+            var fereastra = new ProgramariWindow();
             fereastra.ShowDialog();
         }
 
-        private void BtnAdaugaTehnician_Click(object sender, RoutedEventArgs e)
+        private void BtnTratamente_Click(object sender, RoutedEventArgs e)
         {
-            var fereastra = new TehnicianWindow();
-            fereastra.ShowDialog();
-        }
-
-        private void BtnAdaugaTratament_Click(object sender, RoutedEventArgs e)
-        {
-            
-            var fereastra = new TratamenteWindow("medic");
+            var fereastra = new TratamenteWindow("receptie");
             fereastra.Show();
-
         }
 
-        private void BtnConsimtamant_Click(object sender, RoutedEventArgs e)
+        private void BtnFacturi_Click(object sender, RoutedEventArgs e)
         {
-            var fereastra = new ConsimtamantPacientWindow();
-            fereastra.ShowDialog();
-        }
-
-        private void BtnIstoricPacient_Click(object sender, RoutedEventArgs e)
-        {
-            var fereastra = new IstoricPacientWindow();
+            var fereastra = new FacturiWindow();
             fereastra.ShowDialog();
         }
 
@@ -65,20 +61,20 @@ namespace DentalProApp
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += (s, e) =>
             {
-                txtDataOraMedic.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
+                txtDataOraReceptie.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm:ss");
             };
             timer.Start();
         }
+
         private void BtnDeconectare_Click(object sender, RoutedEventArgs e)
         {
-            var login = new LoginWindow();
-            login.Show();
+            var loginWindow = new LoginWindow();
+            loginWindow.Show();
             this.Close();
         }
 
 
+
+
     }
-
-
-    
 }
