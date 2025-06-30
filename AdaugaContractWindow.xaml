@@ -1,0 +1,30 @@
+﻿<Window x:Class="DentalProApp.AdaugaContractWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Adaugă Contract Colaborare" Height="350" Width="400"
+        WindowStartupLocation="CenterScreen" Background="#f9f9f9">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Date Contract Colaborare" FontSize="18" FontWeight="Bold" Margin="0 0 0 15"/>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Medic:" FontWeight="Bold"/>
+            <ComboBox Name="cmbMedici" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Tehnician dentar:" FontWeight="Bold"/>
+            <ComboBox Name="cmbTehnicieni" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Durată contract (luni):" FontWeight="Bold"/>
+            <TextBox Name="txtDurata" Height="30" Margin="0,0,0,10"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Salvează" Width="130" Height="35" HorizontalAlignment="Center"
+                Background="#4CAF50" Foreground="White" Click="BtnSalveaza_Click"/>
+    </Grid>
+</Window>
