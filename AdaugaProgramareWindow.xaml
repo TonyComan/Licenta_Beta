@@ -1,0 +1,34 @@
+﻿<Window x:Class="DentalProApp.AdaugaProgramareWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Adaugă Programare" Height="400" Width="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#f9f9f9">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Adaugă o programare" FontSize="20" FontWeight="Bold" Margin="0 0 0 10"/>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Pacient:" FontWeight="Bold"/>
+            <ComboBox Name="cmbPacient" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Medic:" FontWeight="Bold"/>
+            <ComboBox Name="cmbMedic" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Data programării:" FontWeight="Bold"/>
+            <DatePicker Name="dpData" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Ora programării (hh:mm):" FontWeight="Bold"/>
+            <TextBox Name="txtOra" Height="30" Margin="0,0,0,10"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Salvează" Height="35" Width="120" HorizontalAlignment="Center"
+                Margin="0 20 0 0" Click="BtnSalveaza_Click"
+                Background="#4CAF50" Foreground="White" FontWeight="Bold"/>
+    </Grid>
+</Window>

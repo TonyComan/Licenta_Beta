@@ -26,7 +26,7 @@ namespace DentalProApp
 
         private void BtnAdauga_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Funcție Adăugare utilizator (în lucru)");
+            
 
             var fereastra = new AdaugaUtilizatorWindow();
             var rezultat = fereastra.ShowDialog();
@@ -39,7 +39,7 @@ namespace DentalProApp
 
         private void BtnEditeaza_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Funcție Editare utilizator (în lucru)");
+            
 
 
             var utilizatorSelectat = dgUtilizatori.SelectedItem as Utilizator;
@@ -61,7 +61,7 @@ namespace DentalProApp
 
         private void BtnSterge_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Funcție Ștergere utilizator (în lucru)");
+            
 
 
             var utilizatorSelectat = dgUtilizatori.SelectedItem as Utilizator;

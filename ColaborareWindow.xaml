@@ -1,0 +1,44 @@
+﻿<Window x:Class="DentalProApp.ColaborareWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Colaborare Tehnicieni" Height="520" Width="1000"
+        WindowStartupLocation="CenterScreen" Background="#f9f9f9">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Titlu -->
+            <RowDefinition Height="*"/>
+            <!-- Tabel -->
+            <RowDefinition Height="Auto"/>
+            <!-- Butoane jos -->
+        </Grid.RowDefinitions>
+
+        <!-- Titlu -->
+        <TextBlock Text="📝 Contracte de colaborare medic-tehnician" FontSize="22" FontWeight="Bold" Foreground="#333" Grid.Row="0" Margin="0 0 0 15"/>
+
+        <!-- Tabel contracte -->
+        <DataGrid Name="dgContracte" Grid.Row="1"
+                  AutoGenerateColumns="False" IsReadOnly="True"
+                  HeadersVisibility="Column" SelectionMode="Single"
+                  AlternatingRowBackground="#f0f0f0" RowBackground="White" FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}" Width="40"/>
+                <DataGridTextColumn Header="Medic" Binding="{Binding nume_medic}" Width="*"/>
+                <DataGridTextColumn Header="Tehnician" Binding="{Binding nume_tehnician}" Width="*"/>
+                <DataGridTextColumn Header="Email Tehnician" Binding="{Binding email_tehnician}" Width="*"/>
+                <DataGridTextColumn Header="Specializare" Binding="{Binding specializare_tehnician}" Width="*"/>
+                <DataGridTextColumn Header="Telefon" Binding="{Binding telefon_tehnician}" Width="*"/>
+                <DataGridTextColumn Header="Durată (luni)" Binding="{Binding durata_luni}" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Butoane jos -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 10 0 0">
+            <Button Content="Adaugă" Width="100" Margin="5,0,0,0" Background="#4CAF50" Foreground="White" Click="BtnAdauga_Click"/>
+            <Button Content="Editează" Width="100" Margin="5,0,0,0" Background="#2196F3" Foreground="White" Click="BtnEditeaza_Click"/>
+            <Button Content="Șterge" Width="100" Margin="5,0,0,0" Background="#F44336" Foreground="White" Click="BtnSterge_Click"/>
+            <Button Content="Export PDF" Width="120" Margin="10,0,0,0" Background="#9C27B0" Foreground="White" Click="BtnExport_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

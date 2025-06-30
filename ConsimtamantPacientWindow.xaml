@@ -1,0 +1,41 @@
+﻿<Window x:Class="DentalProApp.ConsimtamantPacientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Consimțământ Chirurgical" Height="520" Width="1000"
+        WindowStartupLocation="CenterScreen" Background="#f9f9f9">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Titlu -->
+        <TextBlock Text="🤝 Consimțământ chrurgical pacient" FontSize="22" FontWeight="Bold"
+                   Foreground="#333" Margin="0 0 0 15"/>
+
+        <!-- DataGrid -->
+        <DataGrid Name="dgConsimtamant" Grid.Row="1" AutoGenerateColumns="False"
+                  IsReadOnly="True" FontSize="14"
+                  AlternatingRowBackground="#f0f0f0" RowBackground="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}" Width="Auto"/>
+                <DataGridTextColumn Header="Pacient" Binding="{Binding nume_pacient}" Width="*"/>
+                <DataGridTextColumn Header="CNP" Binding="{Binding cnp}" Width="*"/>
+                <DataGridTextColumn Header="Telefon" Binding="{Binding telefon}" Width="*"/>
+                <DataGridTextColumn Header="Medic" Binding="{Binding nume_medic}" Width="*"/>
+                <DataGridTextColumn Header="Data" Binding="{Binding data_document, StringFormat=d}" Width="*"/>
+                <DataGridTextColumn Header="Descriere" Binding="{Binding descriere}" Width="2*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Butoane -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Adaugă" Width="100" Margin="5" Background="#4CAF50" Foreground="White" Click="BtnAdauga_Click"/>
+            <Button Content="Editează" Width="100" Margin="5" Background="#2196F3" Foreground="White" Click="BtnEditeaza_Click"/>
+            <Button Content="Șterge" Width="100" Margin="5" Background="#F44336" Foreground="White" Click="BtnSterge_Click"/>
+            <Button Content="Export PDF" Width="120" Margin="5" Background="#9C27B0" Foreground="White" Click="BtnExport_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

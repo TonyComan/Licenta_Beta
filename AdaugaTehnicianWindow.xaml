@@ -1,0 +1,36 @@
+﻿<Window x:Class="DentalProApp.AdaugaTehnicianWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Adaugă Tehnician Dentar" Height="420" Width="400"
+        WindowStartupLocation="CenterScreen" Background="#f9f9f9">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="🔬 Date tehnician dentar" FontSize="18" FontWeight="Bold" Margin="0 0 0 15"/>
+
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="Nume:" FontWeight="Bold"/>
+            <TextBox Name="txtNume" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Prenume:" FontWeight="Bold"/>
+            <TextBox Name="txtPrenume" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Specializare:" FontWeight="Bold"/>
+            <TextBox Name="txtSpecializare" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Telefon:" FontWeight="Bold"/>
+            <TextBox Name="txtTelefon" Height="30" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Email:" FontWeight="Bold"/>
+            <TextBox Name="txtEmail" Height="30" Margin="0,0,0,10"/>
+        </StackPanel>
+
+        <Button Grid.Row="2" Content="Adaugă tehnician" Width="150" Height="35" HorizontalAlignment="Center"
+                Background="#4CAF50" Foreground="White" Click="BtnAdauga_Click"/>
+    </Grid>
+</Window>
